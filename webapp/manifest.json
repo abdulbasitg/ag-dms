@@ -38,13 +38,14 @@
             "documentTable": {
                 "name": "com.sap.ecm.reuse.documentTable",
                 "settings": {
+                    "destinationPath": "api",
                     "repositoryId": "AG_REPOSITORY",
-                    "objectId": "76de677000f4c846bc5d6e56"
+                    "objectId": "076fd490002f51684100fe56"
                 }
             }
         },
         "resourceRoots": {
-            "com.sap.ecm.reuse.documentTable": "./../comsapecmreuse.comsapecmreusedocumentTable/"
+            "com.sap.ecm.reuse.documentTable": "comsapecmreuse.comsapecmreusedocumentTable/"
         },        
         "dependencies": {
             "minUI5Version": "1.120.9",
