@@ -1,7 +1,7 @@
 {
     "_version": "1.59.0",
     "sap.app": {
-        "id": "com.ag.agdms",
+        "id": "comagagdms",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -14,7 +14,21 @@
             "id": "@sap/generator-fiori:basic",
             "version": "1.12.5",
             "toolsId": "666246cc-ea1c-48ff-8af9-3e4d49534235"
-        }
+        },
+        "crossNavigation": {
+            "inbounds": {
+                "dms-display": {
+                    "semanticObject": "dms",
+                    "action": "display",
+                    "icon": "sap-icon://sap-logo-shape",
+                    "title": "DMS Sample",
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    }
+                }
+            }
+        }    
     },
     "sap.ui": {
         "technology": "UI5",
@@ -36,12 +50,7 @@
         "flexEnabled": true,
         "componentUsages": {
             "documentTable": {
-                "name": "com.sap.ecm.reuse.documentTable",
-                "settings": {
-                    "destinationPath": "api",
-                    "repositoryId": "AG_REPOSITORY",
-                    "objectId": "076fd490002f51684100fe56"
-                }
+                "name": "com.sap.ecm.reuse.documentTable"
             }
         },
         "resourceRoots": {
@@ -68,7 +77,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "com.ag.agdms.i18n.i18n"
+                    "bundleName": "comagagdms.i18n.i18n"
                 }
             }
         },
@@ -84,7 +93,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "async": true,
-                "viewPath": "com.ag.agdms.view",
+                "viewPath": "comagagdms.view",
                 "controlAggregation": "pages",
                 "controlId": "app",
                 "clearControlAggregation": false
@@ -109,14 +118,21 @@
             }
         },
         "rootView": {
-            "viewName": "com.ag.agdms.view.App",
+            "viewName": "comagagdms.view.App",
             "type": "XML",
             "async": true,
             "id": "App"
         }
     },
+    "sap.fiori": {
+        "registrationIds": [],
+        "archeType": "transactional"
+    },
+    "sap.platform.cf": {
+        "ui5VersionNumber": "1.120.x"
+    },
     "sap.cloud": {
         "public": true,
         "service": "comagagdms"
-    }
+    }    
 }

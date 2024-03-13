@@ -5,7 +5,7 @@ sap.ui.define(
     function(BaseController) {
       "use strict";
   
-      return BaseController.extend("com.ag.agdms.controller.App", {
+      return BaseController.extend("comagagdms.controller.App", {
         onInit: function() {
         }
       });

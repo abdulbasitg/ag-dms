@@ -18,13 +18,13 @@
       "source": "^/comsapecmreuse.comsapecmreusedocumentTable/(.*)$",
       "target": "/$1",
       "authenticationType": "none",
-      "destination": "comsapecmreuse_serviceinstances"
+      "destination": "comsapecmreuse"
     },    
     {
       "source": "^/api/(.*)$",
       "target": "$1",
       "authenticationType": "none",
-      "destination": "ecmservice_serviceinstances"
+      "destination": "ecmservice"
     },
     {
       "source": "^(.*)$",

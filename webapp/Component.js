@@ -5,12 +5,12 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "com/ag/agdms/model/models"
+        "comagagdms/model/models"
     ],
     function (UIComponent, Device, models) {
         "use strict";
 
-        return UIComponent.extend("com.ag.agdms.Component", {
+        return UIComponent.extend("comagagdms.Component", {
             metadata: {
                 manifest: "json"
             },
@@ -27,7 +27,6 @@ sap.ui.define([
                 // enable routing
                 this.getRouter().initialize();
 
-                // set the device model
                 this.setModel(models.createDeviceModel(), "device");
             }
         });
